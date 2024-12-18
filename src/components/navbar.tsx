@@ -1,49 +1,52 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import { ModeToggle } from "@/components/toggle-theme";
 import React, { useState } from "react";
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem } from "@/components/ui/dropdown-menu";
 import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Container } from "@/components/container";
 
-const scrollToSection = (id: string) => {
-  const element = document.getElementById(id);
-  if (element) {
-    element.scrollIntoView({ behavior: "smooth" });
-  }
-};
-
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const handleNavigation = (sectionId: string) => {
+    if (pathname === '/') {
+      const element = document.getElementById(sectionId);
+      element?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      router.push(`/#${sectionId}`);
+    }
+  };
 
   return (
     <nav className="fixed top-0 w-full bg-white dark:bg-zinc-900 z-50 border-b border-zinc-200 dark:border-zinc-800">
       <Container>
         <div className="container mx-auto py-4">
           <div className="flex items-center justify-between">
-            {/* Logo */}
             <Link href="/" className="text-2xl font-bold text-zinc-900 dark:text-zinc-50">
               Rafimh .
             </Link>
-            {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
               <button
-                onClick={() => scrollToSection("home")}
+                onClick={() => handleNavigation("home")}
                 className="relative text-zinc-900 dark:text-zinc-50 hover:no-underline group"
               >
                 Home<span className="absolute -bottom-1 left-0 w-full h-0.5 bg-zinc-900 dark:bg-zinc-50 transform -rotate-4 scale-x-0 transition-transform group-hover:scale-x-100"></span>
                 <span className="absolute -bottom-2.5 left-0 w-full h-0.5 bg-zinc-900 dark:bg-zinc-50 transform -rotate-3 scale-x-0 transition-transform group-hover:scale-x-100 delay-75"></span>
               </button>
               <button
-                onClick={() => scrollToSection("projects")}
+                onClick={() => handleNavigation("projects")}
                 className="relative text-zinc-900 dark:text-zinc-50 hover:no-underline group"
               >
                 Projects<span className="absolute -bottom-1 left-0 w-full h-0.5 bg-zinc-900 dark:bg-zinc-50 transform -rotate-4 scale-x-0 transition-transform group-hover:scale-x-100"></span>
                 <span className="absolute -bottom-2.5 left-0 w-full h-0.5 bg-zinc-900 dark:bg-zinc-50 transform -rotate-3 scale-x-0 transition-transform group-hover:scale-x-100 delay-75"></span>
               </button>
               <button
-                onClick={() => scrollToSection("techstack")}
+                onClick={() => handleNavigation("techstack")}
                 className="relative text-zinc-900 dark:text-zinc-50 hover:no-underline group"
               >
                 TechStack<span className="absolute -bottom-1 left-0 w-full h-0.5 bg-zinc-900 dark:bg-zinc-50 transform -rotate-4 scale-x-0 transition-transform group-hover:scale-x-100"></span>
@@ -66,7 +69,6 @@ const Navbar: React.FC = () => {
               <ModeToggle />
             </div>
 
-
             {/* Mobile Navigation */}
             <div className="md:hidden ml-auto flex items-center gap-2">
               <ModeToggle />
@@ -81,13 +83,13 @@ const Navbar: React.FC = () => {
                   </button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="end" sideOffset={5} className="bg-white dark:bg-zinc-900">
-                  <DropdownMenuItem onClick={() => scrollToSection("home")}>
+                  <DropdownMenuItem onClick={() => handleNavigation("home")}>
                     Home
                   </DropdownMenuItem>
-                  <DropdownMenuItem onClick={() => scrollToSection("projects")}>
+                  <DropdownMenuItem onClick={() => handleNavigation("projects")}>
                     Projects
                   </DropdownMenuItem>
-                  <DropdownMenuItem onClick={() => scrollToSection("techstack")}>
+                  <DropdownMenuItem onClick={() => handleNavigation("techstack")}>
                     TechStack
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
