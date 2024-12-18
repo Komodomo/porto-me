@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Navbar from "@/components/navbar";
 import { Container } from "@/components/container";
 import { Footer } from "@/components/footer";
