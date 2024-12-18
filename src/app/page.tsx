@@ -12,7 +12,7 @@ export default function Home() {
           {/* Hero Section */}
           <section id="home" className="flex flex-col-reverse md:flex-row items-center justify-between gap-8 px-4 sm:px-0">
             <div className="flex-1 space-y-4 text-center md:text-left">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">Hi, I'm Your Name</h1>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">Hi, I&apos;m InSaturn <span>(just game nickname)</span></h1>
               <p className="text-lg sm:text-xl text-zinc-600 dark:text-zinc-400">Frontend Developer</p>
               <p className="text-sm sm:text-base text-zinc-600 dark:text-zinc-400 max-w-prose">
                 I build accessible, inclusive products and digital experiences for the web.
