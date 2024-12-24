@@ -1,9 +1,10 @@
 {
+  "$schema": "https://json.schemastore.org/package",
   "name": "porto-me",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -14,7 +15,7 @@
     "@radix-ui/react-slot": "^1.1.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "lucide-react": "^0.465.0",
+    "lucide-react": "^0.469.0",
     "next": "^15.1.0",
     "next-themes": "^0.4.3",
     "react": "^19.0.0",
@@ -24,8 +25,8 @@
   },
   "devDependencies": {
     "@types/node": "^22",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
     "eslint": "^9",
     "eslint-config-next": "15.0.3",
     "postcss": "^8",
