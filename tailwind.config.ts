@@ -17,7 +17,16 @@ export default {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+			keyframes: {
+        'music-pulse': {
+          '0%, 100%': { transform: 'scaleY(1)' },
+          '50%': { transform: 'scaleY(0.7)' },
+        },
+      },
+      animation: {
+        'music-pulse': 'music-pulse 1s ease-in-out infinite',
+      },
   	}
   },
   plugins: [require("tailwindcss-animate")],
