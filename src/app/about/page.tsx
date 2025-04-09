@@ -92,13 +92,13 @@ export default function About() {
     <div className="min-h-screen grid grid-rows-[auto_1fr_auto]">
       <Navbar />
       <Container>
-        <main className="flex flex-col gap-6 sm:gap-8 py-8 sm:py-20">
+        <main className="flex flex-col gap-6 sm:gap-8 py-24">
 
           {/* Image Section */}
           <section className="flex flex-col-reverse md:flex-row items-center justify-between gap-8">
             <div className="flex-1 space-y-2 text-left">
               <div className="flex gap-4 items-center justify-center mb-8 mt-12 md:mt-4 lg:mt-2">
-                <div className="w-1/3 h-[200px] flex items-center justify-center relative overflow-hidden">
+                <div className="w-1/3 h-[200px] flex items-center justify-center relative overflow-hidden rounded-lg">
                   <img
                     src="/images/banner-profile/panglipuran.jpg"
                     alt="Myself"
