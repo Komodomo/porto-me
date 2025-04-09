@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
         <div className="container mx-auto py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="text-2xl font-bold text-zinc-900 dark:text-zinc-50">
-              Rafimh .
+              Rafimh . | sorry still building
             </Link>
             <div className="hidden md:flex items-center space-x-8">
               <button
@@ -46,10 +46,10 @@ const Navbar: React.FC = () => {
                 <span className="absolute -bottom-2.5 left-0 w-full h-0.5 bg-zinc-900 dark:bg-zinc-50 transform -rotate-3 scale-x-0 transition-transform group-hover:scale-x-100 delay-75"></span>
               </button>
               <button
-                onClick={() => handleNavigation("techstack")}
+                onClick={() => handleNavigation("tech")}
                 className="relative text-zinc-900 dark:text-zinc-50 hover:no-underline group"
               >
-                TechStack<span className="absolute -bottom-1 left-0 w-full h-0.5 bg-zinc-900 dark:bg-zinc-50 transform -rotate-4 scale-x-0 transition-transform group-hover:scale-x-100"></span>
+                Tech<span className="absolute -bottom-1 left-0 w-full h-0.5 bg-zinc-900 dark:bg-zinc-50 transform -rotate-4 scale-x-0 transition-transform group-hover:scale-x-100"></span>
                 <span className="absolute -bottom-2.5 left-0 w-full h-0.5 bg-zinc-900 dark:bg-zinc-50 transform -rotate-3 scale-x-0 transition-transform group-hover:scale-x-100 delay-75"></span>
               </button>
               <Link
@@ -89,8 +89,8 @@ const Navbar: React.FC = () => {
                   <DropdownMenuItem onClick={() => handleNavigation("projects")}>
                     Projects
                   </DropdownMenuItem>
-                  <DropdownMenuItem onClick={() => handleNavigation("techstack")}>
-                    TechStack
+                  <DropdownMenuItem onClick={() => handleNavigation("tech")}>
+                    Tech
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
                     <Link href="/gallery">Gallery</Link>
