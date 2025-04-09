@@ -10,22 +10,33 @@ export default function Home() {
       <Container>
         <main className="flex flex-col gap-12 sm:gap-20 py-8 sm:py-20">
           {/* Hero Section */}
-          <section id="home" className="flex flex-col-reverse md:flex-row items-center justify-between gap-8 px-4 sm:px-0">
-            <div className="flex-1 space-y-4 text-center md:text-left">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">Hi, I&apos;m InSaturn <span>(just game nickname)</span></h1>
-              <p className="text-lg sm:text-xl text-zinc-600 dark:text-zinc-400">Frontend Developer</p>
-              <p className="text-sm sm:text-base text-zinc-600 dark:text-zinc-400 max-w-prose">
-                I build accessible, inclusive products and digital experiences for the web.
+          <section
+            id="home"
+            className="flex flex-col-reverse md:flex-row items-center justify-between
+            py-16 px-4 sm:py-24 sm:px-8 lg:py-32 lg:px-16
+            relative bg-[linear-gradient(to_right,#80808012_2px,transparent_2px),linear-gradient(to_bottom,#80808012_2px,transparent_2px)] 
+            bg-[size:42px_42px]
+            [mask-image:linear-gradient(to_right,transparent,black_20%,black_80%,transparent),linear-gradient(to_bottom,transparent,black_20%,black_80%,transparent)]
+            [mask-composite:intersect]"
+          >
+            <div className="flex-1 space-y-2 text-center mx-auto ">
+              <h1 className="text-xl sm:text-2xl md:text-3xl font-bold opacity-80">
+                Hello there !
+              </h1>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
+                I&apos;m Komodomo
+              </h1>
+
+              <p className="text-lg sm:text-xl text-zinc-600 dark:text-zinc-400">
+                Ordinary Software Student
               </p>
-            </div>
-            <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 relative">
-              <Image
-                src="/profile.jpg"
-                alt="Profile"
-                fill
-                className="rounded-full object-cover"
-                priority
-              />
+              <p className="text-sm sm:text-base text-zinc-600 dark:text-zinc-400">
+                From Surabaya, East Java, Indonesia.
+              </p>
+              <p className="text-sm sm:text-base text-zinc-600 dark:text-zinc-400">
+                Self-diagnose as a fullstack developer. who doesn&apos;t want to be a fullstack developer?
+                (he doesn&apos;t even know what he wrote)
+              </p>
             </div>
           </section>
 
