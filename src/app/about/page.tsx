@@ -147,16 +147,11 @@ export default function About() {
               <div>
                 <p>
                   I&apos;m right now student of <a
-                    href="https://www.ub.ac.id/id/"
-                    target="_blank"
-                    className="line-through decoration-red-500 decoration-2 text-black dark:text-white">
-                    Brawijaya University
-                  </a> i mean <a
-                    href="https://www.ub.ac.id/id/"
+                    href="https://surabaya.telkomuniversity.ac.id/"
                     target="_blank"
                     className="underline decoration-red-500 text-black dark:text-white">
                     Telkom University Surabaya
-                  </a> majoring in Informatics Engineering (2025-2028). I&apos;m also a member of <a href="#" target="_blank" className="underline decoration-red-500 text-black dark:text-white">Big Company</a> i hope so.
+                  </a> majoring in Informatics Engineering (2025-2028). I&apos;m also a member of <span className="underline decoration-red-500 text-black dark:text-white">Big Company</span> i hope so.
                 </p>
               </div>
             </div>
@@ -218,7 +213,7 @@ export default function About() {
                 </span>
               </h1>
               <p className="text-md sm:text-lg md:text-xl text-zinc-600 dark:text-zinc-400">
-                Find me on these platforms
+                Find me on these platforms (Tak kenal maka tak tau)
               </p>
             </div>
 
@@ -231,7 +226,7 @@ export default function About() {
                     href="mailto:rafimahendra635@gmail.com"
                     className="underline hover:text-primary transition-colors truncate"
                   >
-                    rafimahendra635@gmail.com
+                    komoradev@gmail.com
                   </a>
                 </div>
               </div>
@@ -240,12 +235,12 @@ export default function About() {
                 <Instagram className="h-4 w-4 sm:h-5 sm:w-5" />
                 <span>Instagram -</span>
                 <a
-                  href="https://www.instagram.com/ra.mhndra"
+                  href="https://www.instagram.com/ramhendra_"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline hover:text-primary transition-colors"
                 >
-                  instagram.com/ra.mhndra
+                  instagram.com/ramhendra_
                 </a>
               </div>
 
@@ -253,12 +248,12 @@ export default function About() {
                 <Linkedin className="h-4 w-4 sm:h-5 sm:w-5" />
                 <span>Linkedin -</span>
                 <a
-                  href="https://www.linkedin.com/in/rafi-mahendra-hae/"
+                  href="https://www.linkedin.com/in/rafimahendrakomo/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline hover:text-primary transition-colors"
                 >
-                  linkedin.com/in/rafi-mahendra-hae/
+                  linkedin.com/in/rafimahendrakomo/
                 </a>
               </div>
 

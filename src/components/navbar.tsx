@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
         <div className="container mx-auto py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="text-2xl font-bold text-zinc-900 dark:text-zinc-50">
-              Rafimh . | sorry still building
+              Rafimh . | under construction
             </Link>
             <div className="hidden md:flex items-center space-x-8">
               <button

@@ -11,8 +11,8 @@ export default function TechCard({ icon, name }: TechCardProps) {
 
   return (
     <Card className="rounded-lg border hover:bg-accent/50 transition-colors w-fit">
-      <CardContent className="py-3 px-4 flex items-center gap-3">
-        <div className="relative w-5 h-5">
+      <CardContent className="py-2 px-3 sm:py-3 sm:px-4 flex items-center gap-3">
+        <div className="relative w-5 h-5 sm:w-6 sm:h-6">
           <Image
             src={icon}
             alt={name}
@@ -20,7 +20,7 @@ export default function TechCard({ icon, name }: TechCardProps) {
             className={`object-contain ${shouldInvert ? "dark:invert" : ""}`}
           />
         </div>
-        <span className="text-sm font-medium text-muted-foreground whitespace-nowrap">
+        <span className="text-xs sm:text-sm font-medium text-muted-foreground whitespace-nowrap">
           {name}
         </span>
       </CardContent>
